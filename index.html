@@ -5,26 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kareem Almahdy</title>
     <link rel="shortcut icon" href="./img/myimg.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <h1 id="name">Kareem Almahdy</h1>
+      
         <div class="nav-bar">
+            
             <ul>
-                <li><a href="#"><img src="./img/icons/home.png" alt="" style="width: 30px;">Home</a></li>
-                <li><a href="#Experience"><img src="./img/icons/experience.png" alt="" style="width: 30px;">About</a></li>
-                <li><a href="#Skill"><img src="./img/icons/skill.png" alt="" style="width: 30px;">Skills</a></li>
-                <li><a href="#proj"><img src="./img/icons/projects.png" alt="" style="width: 30px;">Projects</a></li>
-                <li><a href="#contact"><img src="./img/icons/contact.png" alt="" style="width: 30px;">Contact</a></li>
+                
+                <a href="#"><li><img src="./img/icons/home.png" alt="" style="width: 30px;">Home</li></a>
+                <a href="#Experience"><li><img src="./img/icons/experience.png" alt="" style="width: 30px;">About</li></a>
+                <a href="#Skill"><li><img src="./img/icons/skill.png" alt="" style="width: 30px;">Skills</li></a>
+                <a href="#project"><li><img src="./img/icons/projects.png" alt="" style="width: 30px;">Projects</li></a>
+                <a href="#contact"><li><img src="./img/icons/contact.png" alt="" style="width: 30px;">Contact</li></a>
                 
             </ul>
-            
-            
         </div>
+    </nav>        
+        
         <section>
-            <div class="section">
+            <div id="home" class="section">
+                
+               
                 <div id="profileImg">
-                    <img src="./img/myimg.jpeg" alt="Full-stake developer" style="width: 200px;">
+                    <img src="./img/myimg.jpeg" alt="Full-stake developer" style="width: 500px;">
+                    <h1>KAREEM ALMAHDY</h1>
                 </div>
                 <div class="discription">
                     <p>Full-Stack Developer specializing in building high-performance web applications and delivering efficient solutions to solve real business problems.</p>
@@ -34,37 +43,48 @@
 
             <div id="Experience" class="section">
 
-                <h2 class="title">Leadership & Experience</h2>
-                <img src="./img/Screenshot 2025-08-31 183927.png" alt="">
+                <div>
+                    <h2 class="title">Leadership & Experience <hr></h2>
+                    
+                        <img src="./img/Screenshot 2025-08-31 183927.png" alt="" style="width: 100%;">
+                </div>
+                
 
-                <div class="item">
-                    <div class="exper">
-                        <img src="./img/Enactus o6u.jpg" alt="Presedent" style="width: 100px;">
-                        <div class="exp-desc">
-                            <h3 class="posetion">President at Enactus, October 6 University</h3>
-                            <p class="pos-desc">As President of Enactus at October 6 University, I led the recruitment process, organized on-campus booths and branding campaigns, and created engaging activities and games to attract and motivate students. I also established a collaboration with the Engineers Syndicate, where we hosted activities at their club to expand our outreach and impact.</p>
+                <div id="experience">
+
+                    <div class="item">
+                        <div class="exper">
+                            <img src="./img/Enactus o6u.jpg" alt="Presedent" style="width: 100px;">
+                            <div class="exp-desc">
+                                <h3 class="posetion">President at Enactus, October 6 University</h3>
+                                <p class="pos-desc">As President of Enactus at October 6 University, I led the recruitment process, organized on-campus booths and branding campaigns, and created engaging activities and games to attract and motivate students. I also established a collaboration with the Engineers Syndicate, where we hosted activities at their club to expand our outreach and impact.</p>
+                            </div>
                         </div>
+                    
+
+
+                        <div class="exper">
+                            <img src="./img/stem.jpg" alt="Head of marketing" style="width: 100px;">
+                            <div class="exp-desc">
+                                <h3 class="posetion">Marketing member at TEDx STEM Fayoum </h3>
+                                <p class="pos-desc">Marketing Team Member at TEDx STEM Fayoum, where I contributed to organizing the 2022 event and was responsible for ticket sales, helping drive attendance and ensure the event’s success.</p>
+                            </div>
+                        </div>
+                    
+                    
                     </div>
+
                 </div>
 
-
-                <div class="item">
-                    <div class="exper">
-                        <img src="./img/stem.jpg" alt="Head of marketing" style="width: 100px;">
-                        <div class="exp-desc">
-                            <h3 class="posetion">Marketing member at TEDx STEM Fayoum </h3>
-                            <p class="pos-desc">Marketing Team Member at TEDx STEM Fayoum, where I contributed to organizing the 2022 event and was responsible for ticket sales, helping drive attendance and ensure the event’s success.</p>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
 
 
             <div id="Skill" class="section">
 
-               <h2 class="title">Skills</h2>
+               <h2 class="title">Skills <hr></h2>
                <div class="discription">
-                    <h4>Let's Explore Popular Skills</h4>
+                    <h4>Let's Explore Popular Skills . . .</h4>
                 </div>
                 <div id="prog-lang">
                     <ul>
@@ -73,9 +93,9 @@
                         <li><img src="./img/icons/Javascript--Streamline-Svg-Logos.png" alt=""> Javascript </li>
                         <li><img src="./img/icons/C-Plusplus--Streamline-Svg-Logos.png" alt=""> C++</li>
                         <li><img src="./img/icons/Java--Streamline-Svg-Logos.png" alt=""> Java</li>
-                        <li><img src="./img/icons/Php--Streamline-Svg-Logos.png" alt="" style="width: 30px;">PHP </li>
-                        <li><img src="./img/icons/Laravel-Logo--Streamline-Ultimate.png" alt="" style="width: 25px;"> Laravel </li>
-                        <li><img src="./img/icons/Nodejs--Streamline-Svg-Logos.png" alt="" style="width: 30px;"> Node js</li>
+                        <li><img src="./img/icons/Php--Streamline-Svg-Logos.png" alt="" >PHP </li>
+                        <li><img src="./img/icons/Laravel-Logo--Streamline-Ultimate.png" alt="" "> Laravel </li>
+                        <li><img src="./img/icons/Nodejs--Streamline-Svg-Logos.png" alt="" "> Node js</li>
                         <li><img src="./img/icons/Bootstrap--Streamline-Svg-Logos.png" alt=""> Bootstrap </li>
                         <li><img src="./img/icons/React--Streamline-Svg-Logos.png" alt=""> React </li>
                         <li><img src="./img/icons/Prisma--Streamline-Svg-Logos.png" alt=""> Prisma</li>
@@ -88,25 +108,95 @@
                 </div>
 
             </div>
-            <div id="proj" class="section">
 
-               <h2 class="title">Projects</h2>
+
+
+
+
+            <div id="project" class="section">
+
+               
+
                <div class="discription">
+                    <h2 class="title">Projects <hr></h2>
+
                     <h4>Real-world projects focused on performance, scalability, and delivering impactful business solutions.</h4>
                 </div>
-                <h3>My first project</h3>
-                <iframe src="#" frameborder="50" style="width: 100%;"></iframe>
+                <div class="proj">
+
+                    <ul>
+                        <li>
+                            <h3>My first project </h3>
+                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
+                        </li>
+                        <li>
+                            <h3>My first project </h3>
+                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
+                        </li>
+                        <li>
+                            <h3>My first project </h3>
+                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
+                        </li>
+                        <li>
+                            <h3>My first project </h3>
+                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
+                        </li>
+                        <li>
+                            <h3>My first project </h3>
+                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
+                        </li>
+                        <li>
+                            <h3>My first project </h3>
+                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
+                        </li>
+                        <li>
+                            <h3>My first project </h3>
+                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
+                        </li>
+                        <li>
+                            <h3>My first project </h3>
+                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
+                        </li>
+                        <li>
+                            <h3>My first project </h3>
+                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
+                        </li>
+                        <li>
+                            <h3>My first project </h3>
+                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
+                        </li>
+                        
+                    </ul>
                 </div>
 
             </div>
-            <div id="contact" class="section">
 
-               <h2 class="title">Contact Us</h2>
-               <h3>Contact Information</h3>
-               <ul>
-                <li><a href="mailto:kareemlmhd@gmail.com" ><img src="./img/icons/Email-Action-Read--Streamline-Ultimate.png" alt=""> Send Me An Email</a></li>
-                <li><a href="tel:+201002816220"><img src="./img/icons/contact.png" alt=""> Call Me On phone</a></li>
-               </ul>
+
+
+
+
+
+
+            <div id="contact" class="section">
+                <div class="info">
+                    <h2 class="title">Contact Us <hr></h2>
+
+                    
+                    <ul class="Call">
+                        <li><h3>Contact Information</h3></li>
+                        <li><a href="mailto:kareemlmhd@gmail.com" ><img src="./img/icons/Email-Action-Read--Streamline-Ultimate.png" alt=""> Send Me An Email</a></li>
+                        <li><a href="tel:+201002816220"><img src="./img/icons/contact.png" alt=""> Call Me On phone</a></li>
+                    </ul>
+
+                    <ul class="follow">
+                        <li><a href="https://www.facebook.com/kareem.almahdy.2025/"> <img src="./img/icons/facebook_1322034.png" alt=""></a></li>
+                        <li><a href="https://www.instagram.com/kareem_almahdy7/"> <img src="./img/icons/instagram_1322039.png" alt=""></a></li>
+                        <li><a href="https://www.linkedin.com/in/kareem-almahdy/"> <img src="./img/icons/linkedin.png" alt=""></a></li>
+                        <li><a href="https://github.com/Kareem-El-mahdy"> <img src="./img/icons/github_1322053.png" alt=""></a></li>
+                    </ul>
+                </div>
+
+               
                <fieldset>
                 <legend> Message Me </legend>
                <div class="form">
@@ -138,7 +228,7 @@
             </div>
             
         </section>
-    </nav>
+    
     
 </body>
 </html>

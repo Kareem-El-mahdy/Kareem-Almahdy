@@ -61,6 +61,7 @@ nav{
     background-color: rgb(17, 15, 15);
     margin: 30px;
     border-radius: 30px;
+    overflow: hidden;
  
 
 }
@@ -76,6 +77,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 .discription{
     width: 40%;
@@ -85,6 +87,11 @@ nav{
     font-size: 50px;
     position: absolute;
     margin: 450px 0px;
+}
+
+#home img{
+    width: 100%;
+    
 }
 
 #Experience , .exper{
@@ -97,6 +104,7 @@ nav{
 }
 .exper img{
     margin: 10px 30px;
+    width: 100px;
     
 }
 .exper p {
@@ -329,6 +337,161 @@ button{
 }
  
 
-@media screen {
+@media (width <= 1120px){
+
+    .nav-bar li{
+    display: none;
     
 }
+.nav-bar ul{
+    border-radius: 10px; 
+    width: 100%;
+
+    left: 0;
+
+    
+}
+
+
+    #profileImg{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0%;
+    width: 50%;
+}
+#home{
+    flex-direction: column;
+}
+.discription{
+    width: 60%;
+    font-size: 20px;
+    
+}
+#home h1{
+    font-size: 30px;
+    position:relative;
+    margin:  0px;
+}
+
+#Experience , .exper{
+    flex-direction: column;
+    
+}
+.exper{
+    flex-direction: row;
+    height: 40%;
+    width: 100%;
+    font-size: 10px;
+}
+.img{
+    width: 50%;
+    
+}
+
+.exper img{
+    margin: 5px 0px;
+    width: 45px;
+    
+}
+
+.exp-desc{
+    
+    font-size: 10px;
+}
+
+
+#Experience div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#experience{
+    width: 100%;
+    
+    overflow: hidden;
+    
+}
+
+
+
+.title{
+    font-size: 30px;
+    margin: 20px;
+}
+
+
+
+#prog-lang{
+    width: 95%;
+
+}
+
+
+#prog-lang li img{
+    width: 60px;
+}
+
+
+
+
+#contact{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   
+}
+
+.Call{
+    margin: 10px 10px 10px 10px;
+}
+.Call img{
+    width: 20px;
+}
+.Call li{
+    margin: 10px;
+    width: 200px;
+}
+
+.follow img{
+
+    width: 30px;
+}
+.follow {
+
+   
+    margin-left: 0px;
+}
+
+fieldset{
+    width: 90%;
+    height: 100%;
+    margin: 10px 10px  100px 10px;
+   
+}
+
+
+form div{
+    padding: 5px;
+}
+form div input {
+    height: 25px;
+    width: 200px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 23, 23);
+    font-size: 15px;
+}
+
+legend{
+    padding: 5px;
+    
+    font-size: 15px;
+
+}
+button{
+    width: 50px;
+    margin-bottom: 10px;
+    
+}
+    }

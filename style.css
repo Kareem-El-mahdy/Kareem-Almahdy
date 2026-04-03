@@ -86,7 +86,7 @@ nav{
 #home h1{
     font-size: 50px;
     position: absolute;
-    margin: 450px 0px;
+    margin: 500px 0px;
 }
 
 #home img{
@@ -335,7 +335,33 @@ button{
     background-color: #140303;
     
 }
- 
+ @media (width >= 1600px){
+   #profileImg{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: row;
+    width: 32%;
+    left: 20%;
+
+}
+#home h1{
+    font-size: 45px;
+    position: relative;
+    margin: 100px 0px;
+}
+#home img{
+    width: 90%;
+    left :0%;
+    
+}
+#home .discription{
+    width: 100%;
+    font-size: 30px;
+    width: 70%;
+    margin: 90px  50px 50px 700px ;
+}
+ }
 
 @media (width <= 1120px){
 

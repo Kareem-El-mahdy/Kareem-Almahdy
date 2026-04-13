@@ -9,226 +9,204 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body>
-    <nav>
-      
-        <div class="nav-bar">
-            
-            <ul>
-                
-                <a href="#"><img src="./img/icons/home.png" alt="" style="width: 30px;"><li>Home</li></a>
-                <a href="#Experience"><img src="./img/icons/experience.png" alt="" style="width: 30px;"><li>About</li></a>
-                <a href="#Skill"><img src="./img/icons/skill.png" alt="" style="width: 30px;"><li>Skills</li></a>
-                <a href="#project"><img src="./img/icons/projects.png" alt="" style="width: 30px;"><li>Projects</li></a>
-                <a href="#contact"><img src="./img/icons/contact.png" alt="" style="width: 30px;"><li>Contact</li></a>
-                
-            </ul>
-        </div>
-    </nav>        
+<body style="background-color: #e2e2e2; " class="dark ">
+
+<nav class="navbar navbar-expand-lg bg-body-secondary z-3" style="position: fixed; width: 100%;">
+
+    <a class="navbar-brand mx-5" href="#">Kareem Almahdy</a>
+    <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav nav-underline mx-5">
+
+
+     
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Skill">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#project">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Hire me</a>
+        </li>
+      </ul>
+    </div>
+  
+</nav>
+     
         
-        <section>
-            <div id="home" class="section">
+        <section class="container" >
+            
+            <div id="home" class="d-flex align-items-center pt-5 overflow-hidden ">
                 
                
-                <div id="profileImg">
-                    <img src="./img/myimg.jpeg" alt="Full-stake developer">
-                    <h1>KAREEM ALMAHDY</h1>
+                <div class="w-75 h-75 m-5">
+                    <img src="./img/myimg.png" alt="Full-stake developer" class="w-75 d-block">
                 </div>
-                <div class="discription">
-                    <p>Full-Stack Developer specializing in building high-performance web applications and delivering efficient solutions to solve real business problems.</p>
+                <div class=" w-75">
+                    <p class="fs-1  logo fw-bolder">KAREEM <span style="color: #fd5353;">ALMAHDY</span></p>
+                    <p class="fw-light ">Creative Full-Stack Developer dedicated to transforming business challenges into high-performance web solutions. I don’t just write code; I leverage my creative mindset to build scalable applications that solve real-world problems and drive sustainable business growth.</p>
                 </div>
+
+                
             </div>
+            <hr mb-5>
 
 
-            <div id="Experience" class="section">
+            
+            <div id="Experience" class="mt-5 d-flex justify-content-evenly align-items-center pt-5 overflow-hidden mb-5">  
 
                 <div>
-                    <h2 class="title">Leadership & Experience <hr></h2>
+                    <h2 class="fs-2 fw-bolder" style="color: #fd5353;">Leadership & Experience <hr></h2>
                     
                         <img class="img" src="./img/Screenshot 2025-08-31 183927.png" alt="" >
                 </div>
                 
 
-                <div id="experience">
+                <div id="experience" >
 
-                    <div class="item">
-                        <div class="exper">
-                            <img src="./img/Enactus o6u.jpg" alt="Presedent" >
-                            <div class="exp-desc">
-                                <h3 class="posetion">President at Enactus, October 6 University</h3>
-                                <p class="pos-desc">As President of Enactus at October 6 University, I led the recruitment process, organized on-campus booths and branding campaigns, and created engaging activities and games to attract and motivate students. I also established a collaboration with the Engineers Syndicate, where we hosted activities at their club to expand our outreach and impact.</p>
+                    
+                        <div class="card mb-1 h-25" style="max-width: 540px;" >
+                            <div class="row g-0 rounded-3" style="background-color: #7c88d563;" >
+                                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <img src="./img/Enactus o6u.jpg" class=" img-fluid rounded-start w-75 " alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fs-5 w-75 fw-bold" style="color: #2a3683;">President at Enactus O6U </h5>
+                                        <p class="card-text fs-6 fw-light">Spearheaded student recruitment and branding via creative on-campus activities and forged a key partnership with the Engineers Syndicate to maximize community impact</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    
-
-
-                        <div class="exper">
-                            <img src="./img/stem.jpg" alt="Head of marketing">
-                            <div class="exp-desc">
-                                <h3 class="posetion">Marketing member at TEDx STEM Fayoum </h3>
-                                <p class="pos-desc">Marketing Team Member at TEDx STEM Fayoum, where I contributed to organizing the 2022 event and was responsible for ticket sales, helping drive attendance and ensure the event’s success.</p>
                             </div>
-                        </div>
-                    
-                    
-                    </div>
+
+                        <div class="card mb-1 h-25" style="max-width: 540px;">
+                            <div class="row g-0 rounded-3" style="background-color: #7c88d560;" >
+                                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <img src="./img/stem.jpg" class="img-fluid rounded-start w-75 " alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fs-5 w-75 fw-bold " style="color: #2a3683;">Marketeer at TEDx STEM Fayoum</h5>
+                                        <p class="card-text fs-6 fw-light">Marketing Team Member at TEDx STEM Fayoum, where I contributed to organizing the 2022 event and was responsible for ticket sales, helping drive attendance and ensure the event’s success.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+                      
 
                 </div>
 
                 
             </div>
+            <hr>
 
 
-            <div id="Skill" class="section">
 
-               <h2 class="title">Skills <hr></h2>
+
+            <div id="Skill" class=" d-flex flex-column justify-content-evenly align-items-center pt-5 overflow-hidden">
+
+               <h2 class="fs-2 fw-bolder" style="color:#fd5353;">Skills <hr></h2>
                <div class="discription">
-                    <h4>Let's Explore Popular Skills . . .</h4>
+                    <h4 >Let's Explore Popular Skills . . .</h4>
                 </div>
-                <div id="prog-lang">
-                    <ul>
-                        <li><img src="./img/icons/Html-5--Streamline-Svg-Logos.png" alt=""> Html5</li>
-                        <li><img src="./img/icons/Css-3--Streamline-Svg-Logos.png" alt=""> CSS</li>
-                        <li><img src="./img/icons/Javascript--Streamline-Svg-Logos.png" alt=""> Javascript </li>
-                        <li><img src="./img/icons/C-Plusplus--Streamline-Svg-Logos.png" alt=""> C++</li>
-                        <li><img src="./img/icons/Java--Streamline-Svg-Logos.png" alt=""> Java</li>
-                        <li><img src="./img/icons/Php--Streamline-Svg-Logos.png" alt="" >PHP </li>
-                        <li><img src="./img/icons/Laravel-Logo--Streamline-Ultimate.png" alt="" "> Laravel </li>
-                        <li><img src="./img/icons/Nodejs--Streamline-Svg-Logos.png" alt="" "> Node js</li>
-                        <li><img src="./img/icons/Bootstrap--Streamline-Svg-Logos.png" alt=""> Bootstrap </li>
-                        <li><img src="./img/icons/React--Streamline-Svg-Logos.png" alt=""> React </li>
-                        <li><img src="./img/icons/Prisma--Streamline-Svg-Logos.png" alt=""> Prisma</li>
-                        <li><img src="./img/icons/Mysql--Streamline-Simple-Icons.png" alt=""> MySQL DB</li>
-                        <li><img src="./img/icons/Github--Streamline-Unicons.png" alt=""> GitHub</li>
+                <div id="prog-lang" >
+                    <ul class="mt-3 d-flex justify-space-between p-3 flex-row ">
+                        <li class="fw-bold"><img src="./img/icons/Html-5--Streamline-Svg-Logos.png" alt="" class="bi bi-github"> Html5</li>
+                        <li class="fw-bold"><img src="./img/icons/Css-3--Streamline-Svg-Logos.png" alt=""> CSS</li>
+                        <li class="fw-bold"><img src="./img/icons/Javascript--Streamline-Svg-Logos.png" alt=""> Javascript </li>
+                        <li class="fw-bold"><img src="./img/icons/C-Plusplus--Streamline-Svg-Logos.png" alt=""> C++</li>
+                        <li class="fw-bold"><img src="./img/icons/Java--Streamline-Svg-Logos.png" alt=""> Java</li>
+                        <li class="fw-bold"><img src="./img/icons/Php--Streamline-Svg-Logos.png" alt="" >PHP </li>
+                        <li class="fw-bold"><img src="./img/icons/Laravel-Logo--Streamline-Ultimate.png" alt="" "> Laravel </li>
+                        <li class="fw-bold"><img src="./img/icons/Nodejs--Streamline-Svg-Logos.png" alt="" "> Node js</li>
+                        <li class="fw-bold"><img src="./img/icons/Bootstrap--Streamline-Svg-Logos.png" alt=""> Bootstrap </li>
+                        <li class="fw-bold"><img src="./img/icons/Prisma--Streamline-Svg-Logos.png" alt=""> Prisma</li>
+                        <li class="fw-bold"><img src="./img/icons/Mysql--Streamline-Simple-Icons.png" alt=""> MySQL DB</li>
+                        <li class="fw-bold"><img src="./img/icons/Github--Streamline-Unicons.png" alt=""> GitHub</li>
 
 
 
                     </ul>
                 </div>
 
+
             </div>
+            <hr>
 
-
-
-
-
-            <div id="project" class="section">
+            <div id="project" class=" d-flex flex-column justify-content-evenly align-items-center pt-5 overflow-hidden">
 
                
 
-               <div class="discription">
-                    <h2 class="title">Projects <hr></h2>
+               <div class="discription ">
+                    <p class="fs-2 fw-bolder" style="color:#fd5353">Projects <hr></p>
 
-                    <h4>Real-world projects focused on performance, scalability, and delivering impactful business solutions.</h4>
+                    <p class="fs-4">Real-world projects focused on performance, scalability, and delivering impactful business solutions.</p>
                 </div>
                 <div class="proj">
 
                     <ul>
                         <li>
-                            <h3>My first project </h3>
+                            <p class="fs-3 fw-bold">My first project </p>
                             <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
                         </li>
-                        <li>
-                            <h3>My first project </h3>
-                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
-                        </li>
-                        <li>
-                            <h3>My first project </h3>
-                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
-                        </li>
-                        <li>
-                            <h3>My first project </h3>
-                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
-                        </li>
-                        <li>
-                            <h3>My first project </h3>
-                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
-                        </li>
-                        <li>
-                            <h3>My first project </h3>
-                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
-                        </li>
-                        <li>
-                            <h3>My first project </h3>
-                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
-                        </li>
-                        <li>
-                            <h3>My first project </h3>
-                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
-                        </li>
-                        <li>
-                            <h3>My first project </h3>
-                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
-                        </li>
-                        <li>
-                            <h3>My first project </h3>
-                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
-                        </li>
+                        
                         
                     </ul>
                 </div>
 
-            </div>
+                    </div>
+
+            <hr>
 
 
 
-
-
-
-
-            <div id="contact" class="section">
+            
+            <div id="contact" class=" section d-flex flex-column align-items-center pt-5 overflow-hidden">
+                <p class="fs-2 fw-bolder" style="color:#fd5353">Contact Us </p>
+                <hr>
                 <div class="info">
-                    <h2 class="title">Contact Us <hr></h2>
 
-                    
-                    <ul class="Call">
-                        <li><h3>Contact Information</h3></li>
-                        <li><a href="mailto:kareemlmhd@gmail.com" ><img src="./img/icons/Email-Action-Read--Streamline-Ultimate.png" alt=""> Send Me An Email</a></li>
-                        <li><a href="tel:+201002816220"><img src="./img/icons/contact.png" alt=""> Call Me On phone</a></li>
+                    <ul class="Call m-5  rounded-3 card  d-flex align-items-center justify-center" style="background-color: #7c88d560;">
+                        <li class=" p-3"><p class="fs-3 fw-bold">Contact Information</p></li>
+                        <li class="mb-5 rounded-3" ><a href="mailto:kareemlmhd@gmail.com" class=" rounded-3 p-3 mx-2" style="background-color: #2a3683;"><img src="./img/icons/Email-Action-Read--Streamline-Ultimate.png" alt=""> Send Me An Email</a></li>
+                        <li class="mb-5 rounded-3 "><a href="tel:+201002816220" class="p-3 rounded-3 mx-2" style="background-color: #2a3683;"><img src="./img/icons/contact.png" alt=""> Call Me On phone</a></li>
                     </ul>
-
-                    <ul class="follow">
+                    <ul class="follow d-flex justify-center mb-3 align-items-center">
                         <li><a href="https://www.facebook.com/kareem.almahdy.2025/"> <img src="./img/icons/facebook_1322034.png" alt=""></a></li>
                         <li><a href="https://www.instagram.com/kareem_almahdy7/"> <img src="./img/icons/instagram_1322039.png" alt=""></a></li>
                         <li><a href="https://www.linkedin.com/in/kareem-almahdy/"> <img src="./img/icons/linkedin.png" alt=""></a></li>
                         <li><a href="https://github.com/Kareem-El-mahdy"> <img src="./img/icons/github_1322053.png" alt=""></a></li>
                     </ul>
+
                 </div>
 
                
-               <fieldset>
-                <legend> Message Me </legend>
-               <div class="form">
-
-
-                
-                    
-                    
-                    
-                    <form action="#" method="get">
-                        <div id="name"><label for="req-name">Company Name  : </label><input placeholder="Your Company Name" type="text" name="Name" id="req-name"></div>
-                        <div id="Email"><label for="req-email">Email  : </label><input placeholder="Your Company's Email " type="email" name="email" id="req-email"></div>
-                        <select name="Inquiry" id="">
-                            <option value="">Hire</option>
-                            <option value="">feedback</option>
-                        </select>
-
-                        <div id="Message"><label for="req-message">Message  : </label><input type="textarea" name="message" id="req-message"></div>
-                        
-                        <button type="submit">Send</button>
-                    </form>
-                    </legend>
-
-                </fieldset>
-               </div>
-             
     
 
             </div>
             
+            
         </section>
+
+
+    <!-- From Uiverse.io by vinodjangid07 --> 
+
     
     
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </html>

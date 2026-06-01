@@ -1,214 +1,578 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kareem Almahdy</title>
     <link rel="shortcut icon" href="./img/myimg.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body style="background-color: #e2e2e2; " class="">
 
-<nav  class="navbar navbar-expand-lg  z-3" style="position: fixed; width: 100%;">
+<body style="background-image: linear-gradient(to bottom right , #000000, #ad0000);" class="">
+<div id="preloader">
+  <div class="web-loader">
+    <div class="web-line line-1"></div>
+    <div class="web-line line-2"></div>
+    <div class="web-line line-3"></div>
+    <div class="web-line line-4"></div>
 
-    <a class="navbar-brand mx-5" href="#">Kareem Almahdy</a>
-    <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav nav-underline mx-5">
+    <div class="web-circle circle-1"></div>
+    <div class="web-circle circle-2"></div>
+    <div class="web-circle circle-3"></div>
+
+    <img src="./img/icons/spider.png" alt="Spider loading" class="loader-spider">
+  </div>
+
+  <p class="loader-text">Loading Portfolio...</p>
+</div>
+     <nav class="fixed left-0 top-0 z-50 w-full bg-black/25 backdrop-blur-md">
+    <div class="mx-auto flex min-h-[96px] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a href="#home" class="flex items-center gap-3 text-gold">
+        <img src="./img/icons/spider.logo.png" alt="Kareem logo" class="h-10 w-auto object-contain" />
+        <span class="hidden font-saira text-lg tracking-widest sm:inline">KAREEM</span>
+      </a>
+
+      <button id="menuBtn" type="button" class="flex h-11 w-11 items-center justify-center rounded-xl border border-gold/30 bg-black/70 text-gold shadow-lg shadow-black/30 lg:hidden" aria-label="Open menu" aria-expanded="false">
+        <span class="text-2xl leading-none">☰</span>
+      </button>
+
+      <ul id="navMenu" class="absolute left-4 right-4 top-[88px] hidden flex-col items-center gap-2 rounded-3xl border border-gold/15 bg-black/95 p-4 shadow-2xl shadow-black/50 lg:static lg:flex lg:flex-row lg:bg-transparent lg:p-0 lg:shadow-none lg:border-0">
+  <li class="custom-nav-item active">
+    <img src="./img/icons/spider.png" class="nav-spider" alt="" />
+    <a class="nav-btn block" href="#home">Home</a>
+  </li>
+
+  <li class="custom-nav-item">
+    <img src="./img/icons/spider.png" class="nav-spider" alt="" />
+    <a class="nav-btn block" href="#Education">Education</a>
+  </li>
+
+  <li class="custom-nav-item">
+    <img src="./img/icons/spider.png" class="nav-spider" alt="" />
+    <a class="nav-btn block" href="#Volunteering">Volunteering</a>
+  </li>
+
+  <li class="custom-nav-item">
+    <img src="./img/icons/spider.png" class="nav-spider" alt="" />
+    <a class="nav-btn block" href="#Skill">Skills</a>
+  </li>
+
+  <li class="custom-nav-item">
+    <img src="./img/icons/spider.png" class="nav-spider" alt="" />
+    <a class="nav-btn block" href="#Services">Services</a>
+  </li>
 
 
-     
-
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Skill">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#project">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Hire me</a>
-        </li>
-      </ul>
+</ul>
     </div>
-  
-</nav>
+  </nav>
+
      
-      <!-- From Uiverse.io by vinodjangid07 --> 
-<input id="checkbox" type="checkbox" />
-<label class="switch fixed-bottom m-5" for="checkbox">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="slider">
-    <path
-      d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.6c13.6-11.3 15.4-31.5 4.1-45.1s-31.5-15.4-45.1-4.1C49.7 115.4 16 181.8 16 256c0 132.5 107.5 240 240 240s240-107.5 240-240c0-74.2-33.8-140.6-86.6-184.6c-13.6-11.3-33.8-9.4-45.1 4.1s-9.4 33.8 4.1 45.1c38.9 32.3 63.5 81 63.5 135.4c0 97.2-78.8 176-176 176s-176-78.8-176-176c0-54.4 24.7-103.1 63.5-135.4z"
-    ></path>
-  </svg>
-</label>
-  
-        <section class="container" >
+    
             
-            <div id="home" class="d-flex align-items-center pt-5 overflow-hidden ">
-                
-               
-                <div class="w-75 h-75 m-5">
-                    <img src="./img/myimg.png" alt="Full-stake developer" class="w-75 d-block">
-                </div>
-                <div class=" w-75">
-                    <p class="fs-1  logo fw-bolder">KAREEM <span style="color: #fd5353;">ALMAHDY</span></p>
-                    <p class="fw-light ">Creative Full-Stack Developer dedicated to transforming business challenges into high-performance web solutions. I don’t just write code; I leverage my creative mindset to build scalable applications that solve real-world problems and drive sustainable business growth.</p>
-                </div>
+            <section id="home" class="mt-20 flex flex-col items-center justify-around gap-8 overflow-hidden px-4 pt-5 lg:flex-row lg:px-0" style="background-image:linear-gradient(to bottom right , #000000, #ad0000); overflow: hidden;">
 
-                
-            </div>
-            <hr mb-5>
-
-
-            
-            <div id="Experience" class="mt-5 d-flex justify-content-evenly align-items-center pt-5 overflow-hidden mb-5">  
-
-                <div>
-                    <h2 class="fs-2 fw-bolder" style="color: #fd5353;">Leadership & Experience <hr></h2>
-                    
-                        <img class="img" src="./img/Screenshot 2025-08-31 183927.png" alt="" >
-                </div>
-                
-
-                <div id="experience" >
-
-                    
-                        <div class="card mb-1 h-25" style="max-width: 540px;" >
-                            <div class="row g-0 rounded-3" style="background-color: #7c88d563;" >
-                                <div class="col-md-4 d-flex align-items-center justify-content-center">
-                                <img src="./img/Enactus o6u.jpg" class=" img-fluid rounded-start w-75 " alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title fs-5 w-75 fw-bold" style="color: #2a3683;">President at Enactus O6U </h5>
-                                        <p class="card-text fs-6 fw-light">Spearheaded student recruitment and branding via creative on-campus activities and forged a key partnership with the Engineers Syndicate to maximize community impact</p>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-
-                        <div class="card mb-1 h-25" style="max-width: 540px;">
-                            <div class="row g-0 rounded-3" style="background-color: #7c88d573;" >
-                                <div class="col-md-4 d-flex align-items-center justify-content-center">
-                                <img src="./img/stem.jpg" class="img-fluid rounded-start w-75 " alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title fs-5 w-75 fw-bold " style="color: #2a3683;">Marketeer at TEDx STEM Fayoum</h5>
-                                        <p class="card-text fs-6 fw-light">Marketing Team Member at TEDx STEM Fayoum, where I contributed to organizing the 2022 event and was responsible for ticket sales, helping drive attendance and ensure the event’s success.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-
-                      
-
-                </div>
-
-                
-            </div>
-            <hr>
-
-
-
-
-            <div id="Skill" class=" d-flex flex-column justify-content-evenly align-items-center pt-5 overflow-hidden">
-
-               <h2 class="fs-2 fw-bolder" style="color:#fd5353;">Skills <hr></h2>
-               <div class="discription">
-                    <h4 >Let's Explore Popular Skills . . .</h4>
-                </div>
-                <div id="prog-lang" >
-                    <ul class="mt-3 d-flex justify-space-between p-3 flex-row ">
-                        <li class="fw-bold"><img src="./img/icons/Html-5--Streamline-Svg-Logos.png" alt="" class="bi bi-github"> Html5</li>
-                        <li class="fw-bold"><img src="./img/icons/Css-3--Streamline-Svg-Logos.png" alt=""> CSS</li>
-                        <li class="fw-bold"><img src="./img/icons/Javascript--Streamline-Svg-Logos.png" alt=""> Javascript </li>
-                        <li class="fw-bold"><img src="./img/icons/C-Plusplus--Streamline-Svg-Logos.png" alt=""> C++</li>
-                        <li class="fw-bold"><img src="./img/icons/Java--Streamline-Svg-Logos.png" alt=""> Java</li>
-                        <li class="fw-bold"><img src="./img/icons/Php--Streamline-Svg-Logos.png" alt="" >PHP </li>
-                        <li class="fw-bold"><img src="./img/icons/Laravel-Logo--Streamline-Ultimate.png" alt="" "> Laravel </li>
-                        <li class="fw-bold"><img src="./img/icons/Nodejs--Streamline-Svg-Logos.png" alt="" "> Node js</li>
-                        <li class="fw-bold"><img src="./img/icons/Bootstrap--Streamline-Svg-Logos.png" alt=""> Bootstrap </li>
-                        <li class="fw-bold"><img src="./img/icons/Prisma--Streamline-Svg-Logos.png" alt=""> Prisma</li>
-                        <li class="fw-bold"><img src="./img/icons/Mysql--Streamline-Simple-Icons.png" alt=""> MySQL DB</li>
-                        <li class="fw-bold"><img src="./img/icons/Github--Streamline-Unicons.png" alt=""> GitHub</li>
-
-
-
-                    </ul>
-                </div>
-
-
-            </div>
-            <hr>
-
-            <div id="project" class=" d-flex flex-column justify-content-evenly align-items-center pt-5 overflow-hidden">
-
-               
-
-               <div class="discription ">
-                    <p class="fs-2 fw-bolder" style="color:#fd5353">Projects <hr></p>
-
-                    <p class="fs-4">Real-world projects focused on performance, scalability, and delivering impactful business solutions.</p>
-                </div>
-                <div class="proj">
-
-                    <ul>
-                        <li>
-                            <p class="fs-3 fw-bold">My first project </p>
-                            <a href="#"><img src="./img/myproj.png" alt="My First Project" ></a>
-                        </li>
+                <div style=" left: 0; top: 0; width: 65px; overflow: hidden;">
+                        <p class="k1 m-0" >
+                            K
+                        </p>
+                        <p class="k1 m-0">
+                            A
+                        </p>
+                        <p class="k1 m-0" >
+                            R
+                        </p>
+                        <p class="k1 m-0" >
+                            E
+                        </p>
+                        <p class="k1 m-0" >
+                            E
+                        </p>
+                        <p class="k1 mb-5" >
+                            M
+                        </p>
                         
+                       
+                        <p class="k1 m-0" >
+                            A
+                        </p>
+                        <p class="k1 m-0" >
+                            L
+                        </p>
+                        <p class="k1 m-0" >
+                            M
+                        </p>
                         
-                    </ul>
-                </div>
-
+                        <p class="k1 m-0" >
+                            A
+                        </p>
+                        <p class="k1 m-0" >
+                            H
+                        </p>
+                        <p class="k1 m-0" >
+                            D
+                        </p>
+                        <p class="k1 m-0" >
+                            Y
+                        </p>
+                
                     </div>
 
-            <hr>
+                    
+                    <div class="hero-text w-full mx-7 lg:w-3/4" >
+                        <div class="hey-tag">HEY, I'M KAREEM</div>
+                        <div class="hero-title-1">FULL STACK</div>
+                        <div class="hero-title-2">DEVELOPER</div>
+                        <p class="hero-desc">I’ve always been drawn to problems that make me stop, think, and look deeper.
+Today, I build full-stack web applications that transform complex ideas into smooth, interactive, and reliable user experiences.
+                        </p>
+                        <p class="">
+                            The more challenging the problem is, the more motivated I am to solve it.
+                        </p>
+                        
+                        <div class="skill-cards mb-5">
+                        <div class="skill-card"><span class="skill-icon">&lt;/&gt;</span><div class="skill-title">Frontend</div><div class="skill-sub">React, Next.js,<br>Tailwind CSS</div></div>
+                        <div class="skill-card"><span class="skill-icon"></span><div class="skill-title">Backend</div><div class="skill-sub">Node.js, Express,<br>MongoDB, SQL</div></div>
+                        <div class="skill-card"><span class="skill-icon"></span><div class="skill-title">Database</div><div class="skill-sub">MongoDB,<br>PostgreSQL</div></div>
+                        <div class="skill-card"><span class="skill-icon"></span><div class="skill-title">UI / UX</div><div class="skill-sub">Figma, UI Design,<br>Prototyping</div></div>
+                        </div>
+                    </div>
+                    <div class=" flex w-full flex-col items-center justify-around mt-5 lg:w-2/4">
+                        <img src="./img/myimg.png" alt="Full-stake developer" class="">
+                        
+                        <a href="#contact" class="px-20 py-3 m-5" style="background-image: linear-gradient(to bottom right,#000000,#ad0000); border-radius: 20px; color: aliceblue; border: #ad0000; z-index: 30;">let's Work Together -></a>
+                    </div>
+                
+                    <!-- <div id="parent" style="height: 100vh;"> -->
+                    
+                            
+                    
+                
+                    <!-- الاسم الشمال -->
+                
+                    <!-- الصورة -->
+                     
+                
+                    <!-- الاسم اليمين -->
+                        <div style="position:relative; right: 0; top: 0; width: 65px; overflow: hidden;">
+                            <p class="logo1 fw-bolder left-name m-0" >
+                                Y
+                            </p>
+                            <p class="logo1 fw-bolder left-name m-" >
+                                D
+                            </p>
+                            <p class="logo1 fw-bolder left-name m-0" >
+                                H
+                            </p>
+                            <p class="logo1 fw-bolder left-name m-0" >
+                                A
+                            </p>
+                            <p class="logo1 fw-bolder left-name m-0" >
+                                M
+                            </p>
+                            <p class="logo1  fw-bolder left-name m-0" >
+                                L
+                            </p>
+                            <p class="logo1  fw-bolder left-name mb-5" >
+                                A
+                            </p>
+                            <p class="logo1 fw-bolder left-name m-0" >
+                                M
+                            </p>
+                            <p class="logo1 fw-bolder left-name m-0">
+                                E
+                            </p>
+                            <p class="logo1 fw-bolder left-name m-0" >
+                                E
+                            </p>
+                            <p class="logo1 fw-bolder left-name m-0" >
+                                R
+                            </p>
+                            <p class="logo1 fw-bolder left-name m-0" >
+                                A
+                            </p>
+                            <p class="logo1 fw-bolder left-name m-0" >
+                                K
+                            </p>
+                
+                        </div>
+                
+                
+                    </section>
+                    
+                    <section id="Education" class="mt-0 flex flex-col pt-5 overflow-hidden" style="background-image:linear-gradient(to bottom right , #000000, #ad0000); overflow: hidden;">  
+                        
+                        <div class="flex flex-col m-6 items-center gap-6 lg:m-16 lg:flex-row" >
+                            <img src="./img/o6u.jpg" alt="O6U" class="h-64 rounded-[1.5rem] object-cover mr-10" />
+                            <div>
+                                <p class="text-2xl my-5">October 6 University Student</p>
+                                <p class="text-l">pushed myself beyond the academic path. My journey is driven by self-learning, curiosity, and the desire to build real projects that solve actual problems.
 
+Through university projects and leadership experiences, I learned how to work under pressure, guide teams, make decisions, and turn complex ideas into structured solutions.
 
+This mindset helps me keep growing as a developer who can learn fast, build with purpose, and bring value to every project I work on.</p>
+                            </div>
+                            
+                        </div>
+                        <div class="flex flex-col m-6 items-center gap-6 lg:m-16 lg:flex-row" >
+                            <img src="./img/icons/spider.png" alt="spoder icon" class="h-32 mr-10 imag" style="transform:rotate(270deg);">
+                      
+                                <img src="./img/creativa.jfif" alt="" class="h-64 rounded-[1.5rem] object-cover mr-10">
+                            <div>
+                                <p class="text-2xl my-5">Full-Stack Web Development Fellow at (NTI)</p>
+                                <p class="text-l"> During the scholarship, I learned PHP Native, database fundamentals, Vanilla JavaScript, and how the full request lifecycle works — from a user action in the browser, to the server, to the database, and back to the screen.
 
-            
-            <div id="contact" class=" section d-flex flex-column align-items-center pt-5 overflow-hidden">
-                <p class="fs-2 fw-bolder" style="color:#fd5353">Contact Us </p>
-                <hr>
-                <div class="info">
+For the final project, we built a social media web application, which helped me connect everything together practically database structure, and frontend-backend communication. This experience made me stop seeing websites as just pages and start seeing them as complete systems with logic, structure, and real problem-solving behind them.</p>
+                            </div>
+                        </div>
+                
 
-                    <ul class="Call m-5  rounded-3 card  d-flex align-items-center justify-center" style="background-color: #7c88d5e3;">
-                        <li class=" p-3"><p class="fs-3 fw-bold">Contact Information</p></li>
-                        <li class="mb-5 rounded-3" ><a href="mailto:kareemlmhd@gmail.com" class=" rounded-3 p-3 mx-2" style="background-color: #2a3683;"><img src="./img/icons/Email-Action-Read--Streamline-Ultimate.png" alt=""> Send Me An Email</a></li>
-                        <li class="mb-5 rounded-3 "><a href="tel:+201002816220" class="p-3 rounded-3 mx-2" style="background-color: #2a3683;"><img src="./img/icons/contact.png" alt=""> Call Me On phone</a></li>
-                    </ul>
-                    <ul class="follow d-flex justify-center mb-3 align-items-center">
-                        <li><a href="https://www.facebook.com/kareem.almahdy.2025/"> <img src="./img/icons/facebook_1322034.png" alt=""></a></li>
-                        <li><a href="https://www.instagram.com/kareem_almahdy7/"> <img src="./img/icons/instagram_1322039.png" alt=""></a></li>
-                        <li><a href="https://www.linkedin.com/in/kareem-almahdy/"> <img src="./img/icons/linkedin.png" alt=""></a></li>
-                        <li><a href="https://github.com/Kareem-El-mahdy"> <img src="./img/icons/github_1322053.png" alt=""></a></li>
-                    </ul>
-
+                <div class="m-0" style="bottom: 0;">
+                    <p class="text-9xl m-0 sm:text-5xl">EDUCATION</p>
                 </div>
 
-               
-    
+                
+            </section>
+            
 
-            </div>
+
+
+
+            <section id="Skill" class="flex flex-col justify-evenly items-center pt-5 relative overflow-hidden" style="background-image:linear-gradient(to bottom right , #000000, #ad0000); overflow: hidden;" >
+
+               <img src="./img/icons/—Pngtree—fan-shaped realistic white spider web_6465483.png" alt="" class="w-72 absolute -z-0 m-0" style="top: 0; left: 0; color: #000000;">
+                <div id="prog-lang"  >
+            
+                    <ul class="z-10 m-10 flex flex-wrap justify-center gap-5 p-3">
+                        <li class="fw-bold"><img src="./img/icons/Javascript--Streamline-Svg-Logos.png" alt="" class="h-24 rounded-lg"></li>  
+                        <li class="fw-bold"><img src="./img/icons/C-Plusplus--Streamline-Svg-Logos.png" alt="" class="h-24 rounded-lg"></li>   
+                        <li class="fw-bold"><img src="./img/icons/Php--Streamline-Svg-Logos.png" alt=""  class="h-24 rounded-lg"></li>   
+                        <li class="fw-bold"><img src="./img/icons/Laravel-Logo--Streamline-Ultimate.png" alt=""  class="h-24 rounded-lg"></li>  
+                        <li class="fw-bold"><img src="./img/icons/Nodejs--Streamline-Svg-Logos.png" alt=""  class="h-24 rounded-lg"></li>  
+                        <li class="fw-bold"><img src="./img/icons/Bootstrap--Streamline-Svg-Logos.png" alt="" class="h-24 rounded-lg"></li>   
+                        <li class="fw-bold"><img src="./img/icons/Mysql--Streamline-Simple-Icons.png" alt="" class="h-24 rounded-lg"></li>   
+                    </ul>
+                    <h4 class="flex justify-center m-10">Let's Explore Popular Skills . . .</h4>
+                </div>
+                <div class="flex w-full max-w-5xl min-h-96 flex-col items-center justify-around gap-8 overflow-hidden rounded-3xl bg-[linear-gradient(to_bottom_right,rgba(0,0,0,0.88),rgba(173,0,0,0.35)),url('/img/personalSkill.jpeg')] bg-contain bg-center bg-no-repeat p-8 sm:bg-cover lg:flex-row">
+  <ul class="relative z-10 list-disc space-y-4 pl-6 text-lg font-semibold text-white">
+    <li>
+      <p>Full-Stack Web Development</p>
+    </li>
+    <li>
+      <p>Database Engineering</p>
+    </li>
+    <li>
+      <p>Security & Authentication</p>
+    </li>
+    <li>
+      <p>System Integration</p>
+    </li>
+  </ul>
+  <ul class="relative z-10 list-disc space-y-4 pl-6 text-lg font-semibold text-white">
+    <li>
+      <p>Modern Frontend Development</p>
+    </li>
+    <li>
+      <p>Marketing Department Lead</p>
+    </li>
+    <li>
+      <p>Interactive Marketing Tactics</p>
+    </li>
+    <li>
+      <p>Content Strategy</p>
+    </li>
+  </ul>
+</div>
+
+
+                <div class="m-0" style="bottom: 0; right: 0;">
+                    <p class="text-9xl m-0">Personal <span class="bg-[url(/img/icons/net.png)] bg-contain z-20">Skills</span></p>
+                </div>
+            
+            </section>
+               
+            <section
+  id="Volunteering"
+  data-animate
+  class="relative min-h-screen overflow-hidden px-4 py-24 text-white"
+>
+  <video
+    class="absolute inset-0 z-0 h-full w-full object-cover object-[center_95%]"
+    autoplay
+    muted
+    loop
+    playsinline
+  >
+    <source src="./img/presentation.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Dark red overlay -->
+  <div class="absolute inset-0 z-10 bg-gradient-to-br from-black/90 to-red-900/60"></div>
+
+  <!-- Content -->
+  <div class="relative z-20">
+    
+    <div
+      data-animate
+      class="flex flex-col items-center gap-6 m-6 lg:m-16 lg:flex-row"
+    >
+      <img
+        src="./img/enact.png"
+        alt="Enactus O6U"
+        class="h-56 w-full rounded-[1.5rem] object-cover sm:h-64 lg:w-auto lg:mr-10"
+      />
+
+      <div>
+        <p class="text-2xl my-5">President at Enactus O6U</p>
+
+        <p class="text-base leading-7 lg:text-lg">
+          Enactus was where my logical mindset met social entrepreneurship.
+          Serving on the Board of Directors taught me that great code is useless
+          without a solid business foundation. I spent my time optimizing team
+          workflows, negotiating internship opportunities for members, and
+          translating marketing data into actionable strategies.
+        </p>
+      </div>
+    </div>
+
+    <div
+      data-animate
+      class="flex flex-col items-center gap-6 mx-6 mb-10 lg:mx-16 lg:flex-row"
+    >
+      <img
+        src="./img/tedx.jpg"
+        alt="TEDx STEM Fayoum"
+        class="h-56 w-full rounded-[1.5rem] object-cover sm:h-64 lg:w-auto lg:ml-20 lg:mr-10"
+      />
+
+      <div>
+        <p class="text-2xl my-5">Marketeer at TEDx STEM Fayoum</p>
+
+        <p class="text-base leading-7 lg:text-lg">
+          TEDx was my arena for high-stakes creative strategy. As Marketing Lead,
+          I led a full-scale creative department with one goal: outperforming
+          every previous year. I overhauled our content strategy, mentored my
+          team on high-end copywriting, and built a brand presence that felt as
+          bold and innovative as the talks on stage.
+        </p>
+      </div>
+    </div>
+
+    <div class="m-0">
+      <p class="text-[clamp(3rem,12vw,8rem)] m-0 font-bold">
+        VOLUNTEERING
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+                        <section id="Services" class=" flex flex-col justify-evenly items-center pt-5 relative" style="background-image:linear-gradient(to bottom right , #000000, #ad0000); overflow: hidden;" >
+
+               <img src="./img/icons/net.png" alt="" class=" absolute -z-0 m-0 imag" style="top: 0; right: 0; color: #000000;">
+                <div id="prog-lang"  >
+            
+                    <p class="text-6xl my-16">Solutions for Real Business Needs</p>
+                </div>
+
+
+                <div class="w-full overflow-x-auto px-4 pb-8">
+                <div class="flex min-w-max flex-row justify-between items-center m-4 lg:m-20">
+
+
+                        <!-- Card 1 -->
+                        <div class=" w-80 shrink-0 m-5 relative rounded-2xl bg-orange-800 p-6 text-white shadow-2xl shadow-black/40 transition duration-300 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-orange-500/30">
+                        <p class="text-2xl font-bold text-[#ffd02b]">Website Package</p>
+
+                        <p class="mt-4 text-sm leading-7 text-white/80">
+                            For businesses that need a strong online presence.
+                        </p>
+
+                        <div class="my-5 h-px w-full bg-white/20"></div>
+
+                        <p class="mb-3 font-semibold text-white">Includes:</p>
+
+                        <ul class="space-y-3 text-sm text-white/80">
+                            <li>• Modern responsive website</li>
+                            <li>• Clean UI design</li>
+                            <li>• Landing page or business website</li>
+                            <li>• Contact section</li>
+                            <li>• Mobile-friendly layout</li>
+                            <li>• Basic performance optimization</li>
+                        </ul>
+
+                        <a href="#contact" class="mt-7 block rounded-full bg-black/50 px-5 py-3 text-center font-semibold text-[#ffd02b] transition hover:bg-[#ffd02b] hover:text-black">
+                            Start with this
+                        </a>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class=" w-80 shrink-0 m-5 relative rounded-2xl bg-red-800 p-6 text-white shadow-2xl shadow-black/40 transition duration-300 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-red-500/30">
+                        <p class="text-2xl font-bold text-[#ffd02b]">Business System Package</p>
+
+                        <p class="mt-4 text-sm leading-7 text-white/80">
+                            For companies that need a custom system to manage their work.
+                        </p>
+
+                        <div class="my-5 h-px w-full bg-white/20"></div>
+
+                        <p class="mb-3 font-semibold text-white">Includes:</p>
+
+                        <ul class="space-y-3 text-sm text-white/80">
+                            <li>• Custom dashboard</li>
+                            <li>• User login and authentication</li>
+                            <li>• Database integration</li>
+                            <li>• Admin panel</li>
+                            <li>• CRUD operations</li>
+                            <li>• Clean frontend and backend structure</li>
+                        </ul>
+
+                        <a href="#contact" class="mt-7 block rounded-full bg-[#ffd02b] px-5 py-3 text-center font-bold text-black transition hover:scale-105 hover:shadow-lg hover:shadow-[#ffd02b]/40">
+                            Most practical choice
+                        </a>
+                        </div>
+
+                        <!-- Card 3 / Premium -->
+                        <div class=" w-80 shrink-0 m-5 relative rounded-2xl bg-gradient-to-br from-[#ffd02b] via-yellow-600 to-red-800 p-6 text-black shadow-2xl shadow-[#ffd02b]/30 ring-2 ring-[#ffd02b] transition duration-300 hover:-translate-y-6 hover:scale-[1.06] hover:shadow-[#ffd02b]/50">
+                        
+                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-black px-5 py-2 text-xs font-bold uppercase tracking-widest text-[#ffd02b]">
+                            Best Value
+                        </div>
+
+                        <p class="mt-4 text-2xl font-extrabold text-black/75">Full-Stack Product Package</p>
+
+                        <p class="mt-4 text-sm leading-7 text-white">
+                            For startups and businesses that want to turn an idea into a complete web application.
+                        </p>
+
+                        <div class="my-5 h-px w-full bg-black/25"></div>
+
+                        <p class="mb-3 font-bold text-white">Includes:</p>
+
+                        <ul class="space-y-3 text-sm font-medium text-black/75">
+                            <li class="text-black/75">• Full-stack web app development</li>
+                            <li class="text-black/75">• Frontend and backend integration</li>
+                            <li class="text-black/75">• Database architecture</li>
+                            <li class="text-black/75">• Authentication and authorization</li>
+                            <li class="text-black/75">• Admin dashboard</li>
+                            <li class="text-black/75">• Scalable project structure</li>
+                            <li class="text-black/75">• Deployment-ready code</li>
+                        </ul>
+
+                        <a href="#contact" class="mt-7 block rounded-full bg-black px-5 py-3 text-center font-bold text-[#ffd02b] transition hover:scale-105 hover:bg-red-950">
+                            Build the full product
+                        </a>
+                        </div>
+
+
+                 </div>
+                 </div>
+                                
+            </section>
+
+
+            <section id="project" class="mt-0 flex flex-col pt-5 overflow-hidden relative " style="background-image:linear-gradient(to bottom right , #000000, #ad0000); overflow: hidden;">  
+                                       <img src="./img/icons/net.png" alt="" class=" absolute -z-0 m-0 w-96" style="bottom: 0; right: 0; color: #000000; transform: rotate(270deg);">
+
+                       <div class="overflow-x-auto pb-8 flex flex-row gap-4 m-6 lg:m-16">
+                            
+
+                                <!-- Cheetah Project -->
+                                <div class="my-10 w-80 shrink-0 group flex flex-col items-center overflow-hidden rounded-3xl bg-orange-900 p-6 shadow-2xl shadow-black/40 backdrop-blur-md transition duration-300 hover:-translate-y-4 hover:shadow-[#ffd02b]/20 lg:w-1/3">
+                                    <p class="mb-6 text-2xl font-bold tracking-wide text-[#ffd02b]">
+                                    CHEETAH SOCIAL APP
+                                    </p>
+    
+                                    <div class="overflow-hidden rounded-2xl">
+                                    <img 
+                                        src="./img/icons/profile.png" 
+                                        alt="Cheetah Social App"
+                                        class="w-full rounded-2xl object-cover"
+                                    />
+                                    </div>
+    
+                                    <p class="mt-5 text-center text-sm leading-7 text-white/70">
+                                    A social media web application inspired by modern platforms, focused on user interaction, posts, and smooth digital experience.
+                                    </p>
+    
+                                    <a 
+                                    href="/cheetah.html" 
+                                    class="mt-6 rounded-full bg-[#ffd02b] px-6 py-3 text-sm font-bold text-black transition hover:scale-105 hover:shadow-lg hover:shadow-[#ffd02b]/40"
+                                    >
+                                    View Project
+                                    </a>
+                                </div>
+    
+                                <!-- Hangman Project -->
+                                <div class="my-10 w-80 shrink-0 group flex flex-col items-center overflow-hidden rounded-3xl bg-orange-900 p-6 shadow-2xl shadow-black/40 backdrop-blur-md transition duration-300 hover:-translate-y-4 hover:shadow-[#ffd02b]/20 lg:w-1/3">
+                                    <p class="mb-6 text-2xl font-bold tracking-wide text-white">
+                                    HANGMAN GAME
+                                    </p>
+    
+                                    <div class="overflow-hidden rounded-2xl bg-black/25 ">
+                                    <img 
+                                        src="./img/hangman.png" 
+                                        alt="Hangman Game"
+                                        class="w-full max-w-sm rounded-2xl object-contain"
+                                    />
+                                    </div>
+    
+                                    <p class="mt-5 text-center text-sm leading-7 text-white/75">
+                                    A browser-based word guessing game built to practice logic, DOM manipulation, and interactive JavaScript behavior.
+                                    </p>
+    
+                                    <a 
+                                    href="https://kareem-el-mahdy.github.io/Hangman/" 
+                                    class="mt-6 rounded-full bg-black/60 px-6 py-3 text-sm font-bold text-[#ffd02b] transition hover:scale-105 hover:bg-[#ffd02b] hover:text-black"
+                                    >
+                                    View Project
+                                    </a>
+                                </div>
+
+                         
+  
+
+                        </div>
+                
+
+                <div class="m-0" style="bottom: 0;">
+                    <p class="text-9xl m-0">THE LAB</p>
+                </div>
+
+                
+            </section>
+       
+
+            <section id="contact" class="flex flex-col items-center pt-5 relative overflow-hidden" style="background-image:linear-gradient(to bottom right , #000000, #ad0000); overflow: hidden;" >
+
+                <div class="h-96 flex justify-center items-center">
+                    <p class="text-9xl font-bold ">THANK YOU</p>
+
+                </div>
+               <div class="bg-amber-900 h-52 w-full rounded-t-3xl flex flex-row justify-center items-center gap-5">
+                    <p class="text-5xl font-bold lg:text-9xl ">contact me</p>
+                    <a href="https://www.facebook.com/kareem.almahdy.2025/" aria-label="Facebook"><img src="./img/icons/facebook.png" alt="Facebook" class="h-14 transition hover:-translate-y-1 lg:h-24" /></a></li>
+                        <a href="https://www.instagram.com/kareem_almahdy7/" aria-label="Instagram"><img src="./img/icons/instagram.png" alt="Instagram" class="h-14 transition hover:-translate-y-1 lg:h-24" /></a></li>
+                        <a href="https://www.linkedin.com/in/kareem-almahdy/" aria-label="LinkedIn"><img src="./img/icons/linkedin.png" alt="LinkedIn" class="h-14 transition hover:-translate-y-1 lg:h-24" /></a></li>
+                        <a href="https://github.com/Kareem-El-mahdy" aria-label="GitHub"><img src="./img/icons/github.png" alt="GitHub" class="h-14 transition hover:-translate-y-1 lg:h-24" /></a></li>
+                        <a href="tel:+201002816220" aria-label="GitHub"><img src="./img/icons/call.png" alt="GitHub" class="h-14 transition hover:-translate-y-1 lg:h-24" /></a></li>
+                        <a href="mailto:kareemlmhd@gmail.com" aria-label="GitHub"><img src="./img/icons/gmail.png" alt="GitHub" class="h-14 transition hover:-translate-y-1 lg:h-24" /></a></li>
+                   
+               </div>
+            
+            </section>
             
             
-        </section>
+    
 
 
     <!-- From Uiverse.io by vinodjangid07 --> 
@@ -216,6 +580,8 @@
     
     
 </body>
+
 <script src="./script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<script src="https://cdn.tailwindcss.com"></script>
 </html>
